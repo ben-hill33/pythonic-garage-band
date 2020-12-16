@@ -2,7 +2,7 @@
 ## Project: Garage Band with OOP
 ## Author: Ben Hill
 ### Links and Resources
-- [Pull Request URL]
+- [Pull Request URL](https://github.com/ben-hill33/pythonic-garage-band/pull/1)
 
 ### Setup
 This program uses python-poetry for dependency package manager. In order to create this project, follow the python-poetry link in the Links and Resources section above and install poetry.
@@ -29,7 +29,7 @@ Start with Guitarist,Bassist, and Drummer.
 Make use of a Musician base class to handle common functionality which particular kinds of musicians will inherit.
 
 ### User Acceptance Tests
-Unit tests will be supplied for this lab. Your job is to make them pass. Do NOT modify the supplied tests (except to enable for stretch goals.)
+- [ ] Unit tests will be supplied for this lab. Your job is to make them pass. Do NOT modify the supplied tests (except to enable for stretch goals.)
 
 ### Band Tests
 - [ ] A Band instance should have a name attribute which is a string.
@@ -38,9 +38,9 @@ Unit tests will be supplied for this lab. Your job is to make them pass. Do NOT 
 - [ ] A Band instance should have appropriate __str__ and __repr__ methods.
 - [ ] A Band should have a class method to_list which returns a list of previously created Band instances
 ### Musician Subclass Tests
-- [ ]Each kind of Musician instance should have appropriate __str__ and __repr__ methods.
-- [ ]Each kind of Musician instance should have a get_instrument method that returns string.
-- [ ]Each kind of Musician instance should have a play_solo method that returns string.
+- [ ] Each kind of Musician instance should have appropriate __str__ and __repr__ methods.
+- [ ] Each kind of Musician instance should have a get_instrument method that returns string.
+- [ ] Each kind of Musician instance should have a play_solo method that returns string.
 #### Stretch
 See tests marked “stretch” in supplied test suite.
 Make Musician “abstract” - aka an Abstract Base Class
