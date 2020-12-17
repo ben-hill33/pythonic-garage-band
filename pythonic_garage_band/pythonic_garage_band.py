@@ -12,43 +12,36 @@ class Band:
 
 
 class Musician:
-    name = ["Joan Jett", "Jimi Hendrix", "Meshell Ndegeocello", "Sheila E."]
-
-    instruments = []
-    # def get_instrument(self):
-    #     return instruments
-
-class Guitarist(Musician):
-    def __init__(self, name, instruments=[]):
+    def __init__(self, name, instrument, instance):
         self.name = name
-        self.instruments = instruments
+        self.instrument = instrument
+        self.instance = instance
 
     def __str__(self):
-        return f'My name is {self.name} and I play {self.instruments}'
+        return f'My name is {self.name} and I play {self.instrument}'
 
     def __repr__(self):
-        return f"Guitarist instance. Name = {self.name}"
-    
+        return f"{self.instance} instance. Name = {self.name}"
+
     def get_instrument(self):
-        return f"guitar"
+        return f'{self.instrument}'
+
+
+
+class Guitarist(Musician):
+    def __init__(self, name):
+        super().__init__(name, 'guitar', 'Guitarist')
+
+
+
 
 class Bassist(Musician):
     def __init__(self, name):
-        self.name = name
+        super().__init__(name, 'bass', 'Bassist')
 
-    def __str__(self):
-        return f'My name is {self.name} and I play bass'
 
-    def __repr__(self):
-        return f'Bassist instance. Name = {self.name}'
-
-class Drummer:
+class Drummer(Musician):
     def __init__(self, name):
-        self.name = name
+        super().__init__(name, 'drums', 'Drummer')
 
-    def __str__(self):
-        return f'My name is {self.name} and I play drums'
-
-    def __repr__(self):
-        return f'Drummer instance. Name = {self.name}'
-
+# if __name__ == "__main__":
