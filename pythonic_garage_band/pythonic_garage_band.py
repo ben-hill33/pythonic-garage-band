@@ -12,20 +12,28 @@ class Band:
 
 
 class Musician:
-    pass
+    name = ["Joan Jett", "Jimi Hendrix", "Meshell Ndegeocello", "Sheila E."]
 
-class Guitarist:
-    def __init__(self, name="Joan Jett"):
+    instruments = []
+    # def get_instrument(self):
+    #     return instruments
+
+class Guitarist(Musician):
+    def __init__(self, name, instruments=[]):
         self.name = name
+        self.instruments = instruments
 
     def __str__(self):
-        return f'My name is {self.name} and I play guitar'
+        return f'My name is {self.name} and I play {self.instruments}'
 
     def __repr__(self):
         return f"Guitarist instance. Name = {self.name}"
+    
+    def get_instrument(self):
+        return f"guitar"
 
-class Bassist:
-    def __init__(self, name="Meshell Ndegeocello"):
+class Bassist(Musician):
+    def __init__(self, name):
         self.name = name
 
     def __str__(self):
@@ -35,7 +43,7 @@ class Bassist:
         return f'Bassist instance. Name = {self.name}'
 
 class Drummer:
-    def __init__(self, name="Sheila E."):
+    def __init__(self, name):
         self.name = name
 
     def __str__(self):
