@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 class Band:
     def __init__(self, name, members=None):
         self.name = name
@@ -14,10 +15,18 @@ class Musician:
     pass
 
 class Guitarist:
-    pass
+    def __init__(self, name="Joan Jett"):
+        self.name = name
+
+    def __str__(self):
+        return f'My name is {self.name} and I play guitar'
+
+    def __repr__(self):
+        return f"Guitarist instance. Name = Joan Jett"
 
 class Bassist:
     pass
 
 class Drummer:
     pass
+
