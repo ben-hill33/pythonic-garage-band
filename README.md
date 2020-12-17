@@ -1,8 +1,10 @@
 # Lab: 04 - Classes and Fixtures
 ## Project: Garage Band with OOP
-## Author: Ben Hill
+### Author: Ben Hill
 ### Links and Resources
 - [Pull Request URL](https://github.com/ben-hill33/pythonic-garage-band/pull/1)
+- [Supercharge your Classes with Python super()](https://realpython.com/python-super/)
+  - Inspiration for extending the Musician class so that Guitar, Bass, and Drums will inherit all the things
 
 ### Setup
 This program uses python-poetry for dependency package manager. In order to create this project, follow the python-poetry link in the Links and Resources section above and install poetry.

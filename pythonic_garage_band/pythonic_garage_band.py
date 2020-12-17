@@ -12,10 +12,11 @@ class Band:
 
 
 class Musician:
-    def __init__(self, name, instrument, instance):
+    def __init__(self, name, instrument, instance, solo):
         self.name = name
         self.instrument = instrument
         self.instance = instance
+        self.solo = solo
 
     def __str__(self):
         return f'My name is {self.name} and I play {self.instrument}'
@@ -26,22 +27,19 @@ class Musician:
     def get_instrument(self):
         return f'{self.instrument}'
 
-
+    def play_solo(self):
+        return f'{self.solo}'
 
 class Guitarist(Musician):
     def __init__(self, name):
-        super().__init__(name, 'guitar', 'Guitarist')
-
-
-
+        super().__init__(name, 'guitar', 'Guitarist', 'face melting guitar solo')
 
 class Bassist(Musician):
     def __init__(self, name):
-        super().__init__(name, 'bass', 'Bassist')
-
+        super().__init__(name, 'bass', 'Bassist', 'bom bom buh bom')
 
 class Drummer(Musician):
     def __init__(self, name):
-        super().__init__(name, 'drums', 'Drummer')
+        super().__init__(name, 'drums', 'Drummer', 'rattle boom crash')
 
 # if __name__ == "__main__":
