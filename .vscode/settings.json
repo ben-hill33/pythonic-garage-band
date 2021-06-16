@@ -1,3 +1,14 @@
 {
-  "python.pythonPath": "/usr/local/opt/python@3.9/bin/python3.9"
+  "python.pythonPath": "/Users/bendev/Library/Caches/pypoetry/virtualenvs/pythonic-garage-band-kCh8NoI5-py3.9/bin/python",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.pytest_cache": true,
+    "**/__pycache__": true,
+  }
 }

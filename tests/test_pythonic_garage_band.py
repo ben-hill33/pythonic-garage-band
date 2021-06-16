@@ -189,7 +189,7 @@ def clean():
 #######################
 
 
-@pytest.mark.skip("stretch")
+# @pytest.mark.skip("stretch")
 def test_from_file():
     with open("assets/bands.json") as f:
         bands = json.loads(f.read())
