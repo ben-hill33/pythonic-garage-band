@@ -7,7 +7,6 @@ class Band():
         self.members = members
         Band.instances.append(self.name)
 
-
     def __str__(self):
         return f"The band {self.name}"
 
@@ -15,10 +14,6 @@ class Band():
         return f"Band instance. name={self.name}, members={self.members}"
 
     def play_solos(self):
-        # solos = []
-        # for player in self.members:
-        #     solos.append(player.play_solo())
-        # return solos
         return [player.play_solo() for player in self.members]
 
     @classmethod
@@ -45,6 +40,7 @@ class Musician():
     def play_solo(self):
         return f'{self.solo}'
 
+
 class Guitarist(Musician):
     def __init__(self, name):
         super().__init__(name, 'guitar', 'Guitarist', 'face melting guitar solo')
@@ -52,12 +48,12 @@ class Guitarist(Musician):
     def play_solos(self):
         return f"{self.solos}"
 
+
 class Bassist(Musician, Band):
     def __init__(self, name):
         super().__init__(name, 'bass', 'Bassist', 'bom bom buh bom')
 
+
 class Drummer(Musician, Band):
     def __init__(self, name):
         super().__init__(name, 'drums', 'Drummer', 'rattle boom crash')
-
-# if __name__ == "__main__":
