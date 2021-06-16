@@ -203,7 +203,7 @@ def test_from_file():
     assert nirvana.name == "Nirvana"
 
 
-@pytest.mark.skip("stretch")
+# @pytest.mark.skip("stretch")
 def test_from_yaml():
     bands = yaml.safe_load(open("assets/bands.yml"))
 
